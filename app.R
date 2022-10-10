@@ -1,3 +1,5 @@
+#set working directory to directory containing BART repository
+#install the following packages:
 library(shiny)
 options(java.parameters = "-Xmx4g")
 library(bartMachine) # v1.2.6
