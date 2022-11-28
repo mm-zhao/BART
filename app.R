@@ -58,10 +58,10 @@ ui <- dashboardPage(
               
               column(3,style = 'font-size: 120%',
                      
-                     numericInput("intNoPLN", "No. of positive nodes:", #number of pln
+                     numericInput("intNoPLN", "Positive LN count:", #number of pln
                                   value = ""),
                      
-                     numericInput("intNoNLN", "No. of negative nodes:", #number of nln
+                     numericInput("intNoNLN", "Negative LN count:", #number of nln
                                   value = "")),
               
               column(3, style = 'font-size: 120%',
@@ -127,7 +127,7 @@ ui <- dashboardPage(
                                  collapsed = T,
                                  footer =
                                    imageOutput("surv_q", height = 200),
-                                 "(Stage-specific)")
+                                 )
                         ),
                         column(6, offset = 0, style='padding:0px;', align = "center",
                                gradientBox(
@@ -139,7 +139,7 @@ ui <- dashboardPage(
                                  collapsed = T,
                                  footer = 
                                    imageOutput("surv_curv", height = 350),
-                                 "(Stage-specific)")
+                                 )
                         )
               )
       ),
